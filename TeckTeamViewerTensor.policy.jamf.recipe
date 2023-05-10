@@ -17,7 +17,7 @@
       <key>DOWNLOADURL</key>
       <string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewer-idc6me8qb9.pkg</string>
 			<key>POLICY_CATEGORY</key>
-			<string>Test - Enrollment</string>
+			<string>Business</string>
 			<key>POLICY_NAME</key>
 			<string>Install Latest %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
