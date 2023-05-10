@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Teck branded TeamViewer image</string>
+	<string>Downloads the latest Teck branded TeamViewer image and uploads into Enrollment Policy</string>
 	<key>Identifier</key>
 	<string>local.jamf.teck.teamviewer-policy</string>
 	<key>Input</key>
