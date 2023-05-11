@@ -9,7 +9,7 @@
 				<key>CATEGORY</key>
 				<string>Productivity</string>
 				<key>DOWNLOADURL</key>
-				<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+				<string>https://go.microsoft.com/fwlink/?linkid=</string>
 				<key>INFO</key>
 				<string>O365 was uploaded by Ash Jamf Administrator. If this message is not part of the Info, do not use</string>
 				<key>NAME</key>
@@ -26,6 +26,8 @@
 				<string>365</string>
 				<key>VENDOR</key>
 				<string>Microsoft</string>
+				<key>PRODUCTID</key>
+				<string>2009112</string>
 				<key>UPDATE_PREDICATE</key>
 				<string>pkg_uploaded == True</string>
 		</dict>
@@ -54,9 +56,9 @@
 						<key>Arguments</key>
 					<dict>
 						<key>url</key>
-						<string>%DOWNLOADURL%</string>
+						<string>%DOWNLOADURL%%PRODUCTID%</string>
 						<key>filename</key>
-						<string>%NAME%.pkg</string>
+						<string>%VENDOR%-%SOFTWARETITLE1%-%SOFTWARETITLE2%-%version%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>	
 				    </dict>
