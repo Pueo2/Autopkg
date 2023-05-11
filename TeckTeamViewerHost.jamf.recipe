@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest Teck branded TeamViewer image and uploads into Enrollment Policy</string>
 	<key>Identifier</key>
-	<string>local.jamf.teck.teamviewer-policy</string>
+	<string>com.local.pueo2.jamfpolicy.teckteamviewer</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
