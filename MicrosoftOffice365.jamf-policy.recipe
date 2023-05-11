@@ -58,7 +58,7 @@
 						<key>url</key>
 						<string>%DOWNLOADURL%%PRODUCTID%</string>
 						<key>filename</key>
-						<string>%VENDOR%-%SOFTWARETITLE1%-%SOFTWARETITLE2%-%version%.pkg</string>
+						<string>%VENDOR%-%SOFTWARETITLE1%-%SOFTWARETITLE2%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>	
 				    </dict>
