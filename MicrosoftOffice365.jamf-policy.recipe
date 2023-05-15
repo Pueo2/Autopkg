@@ -3,7 +3,7 @@
 		<key>Description</key>
 		<string>Downloads the latest Teck branded TeamViewer image</string>
 		<key>Identifier</key>
-		<string>local.github.pueo2.jamf-policy.MicrosoftOffice365</string>
+		<string>com.local.pueo2.jamf-policy.MicrosoftOffice365</string>
 		<key>Input</key>
 		<dict>
 				<key>CATEGORY</key>
