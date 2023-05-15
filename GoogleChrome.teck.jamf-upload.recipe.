@@ -46,7 +46,6 @@
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 		</dict>
-		<dict>
         <dict>
             <key>Arguments</key>
             <dict>
