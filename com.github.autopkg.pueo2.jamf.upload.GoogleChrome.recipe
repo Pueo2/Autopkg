@@ -44,6 +44,15 @@
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 			</dict>	
+			<dict>
+				<key>Processor</key>
+					<key>url</key>
+					<string>%DOWNLOADURL%</string>
+					<key>filename</key>
+					<string>GoogleChrome.pkg</string>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>	
+			    </dict>
 			<dict>	   
 				   <key>Processor</key>
 				    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
