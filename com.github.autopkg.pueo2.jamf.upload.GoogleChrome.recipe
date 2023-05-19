@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Teck branded TeamViewer Tensor for SS and SD. Uploads into Jamf</string>
+	<string>Downloads the latest Google Chrome. Uploads into Jamf</string>
 	<key>Identifier</key>
-	<string>local.jamf.teck.teamviewertensor-policy</string>
+	<string>local.jamf.teck.Googlechrome-policy</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
