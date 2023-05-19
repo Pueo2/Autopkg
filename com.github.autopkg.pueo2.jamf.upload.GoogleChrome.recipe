@@ -46,8 +46,6 @@
 			</dict>	
 			<dict>
 				<key>Processor</key>
-					<key>url</key>
-					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
 					<string>GoogleChrome.pkg</string>
 					<key>pkg_category</key>
