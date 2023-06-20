@@ -61,13 +61,12 @@
 					<string>%NOTES%/string>
 			    	</dict>
 			</dict>	
-					<dict>	   
 					<key>Process</key>
 					<array>
-    						<dict>
+    					<dict>
         					<key>Processor</key>
         					<string>com.github.haircut.processors/DatetimeOutputter</string>
-    						</dict>
+    	
 					</dict>
 					</array>
 					<dict>
