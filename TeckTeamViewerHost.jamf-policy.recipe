@@ -12,10 +12,11 @@
 			<string>Productivity</string>
 			<key>INFO</key>
 			<string>TeamViewer Host was uploaded by Ash Jamf Administrator. If this message is not part of the Info, do not use</string>
+			
 			<key>NAME</key>
 			<string>TeamViewerHost</string>
-      <key>DOWNLOADURL</key>
-      <string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
+      			<key>DOWNLOADURL</key>
+      			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
 			<key>POLICY_NAME</key>
@@ -54,7 +55,9 @@
 					<key>filename</key>
 					<string>TeckTeamViewerHost.pkg</string>
 					<key>pkg_category</key>
-					<string>%CATEGORY%</string>	
+					<string>%CATEGORY%</string>
+					<key>pkg_notes</key>
+					<string>"Uploaded via Autopkg %datetime%</string>
 			    </dict>
 			</dict>	
 			<dict>	   
@@ -76,6 +79,14 @@
 		 				<key>Processor</key>
 	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 		 			</dict>			
-	</array>
-</dict>
+				</array>
+					<key>Process</key>
+					<array>
+    						<dict>
+        					<key>Processor</key>
+        					<string>com.github.haircut.processors/DatetimeOutputter</string>
+					
+    						</dict>
+					</array>
+	</dict>
 </plist>
