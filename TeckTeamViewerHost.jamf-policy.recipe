@@ -12,7 +12,8 @@
 			<string>Productivity</string>
 			<key>INFO</key>
 			<string>TeamViewer Host was uploaded by Ash Jamf Administrator. If this message is not part of the Info, do not use</string>
-			
+			<key>NOTES</key>
+			<string>"Uploaded via Autopkg %datetime%</string>
 			<key>NAME</key>
 			<string>TeamViewerHost</string>
       			<key>DOWNLOADURL</key>
@@ -57,11 +58,20 @@
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>pkg_notes</key>
-					<string>"Uploaded via Autopkg %datetime%</string>
+					<string>%NOTES%/string>
 			    </dict>
 			</dict>	
 			<dict>	   
-				   <key>Processor</key>
+				   
+<key>Process</key>
+					<array>
+    						<dict>
+        					<key>Processor</key>
+        					<string>com.github.haircut.processors/DatetimeOutputter</string>
+					
+    						</dict>
+					</array>
+<key>Processor</key>
 				    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		 </dict>
 		 			<dict>
