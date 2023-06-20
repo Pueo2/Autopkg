@@ -59,21 +59,21 @@
 					<string>%CATEGORY%</string>
 					<key>pkg_notes</key>
 					<string>%NOTES%/string>
-			    </dict>
+			    	</dict>
 			</dict>	
-			<dict>	   
-				   
-<key>Process</key>
+					<dict>	   
+					<key>Process</key>
 					<array>
     						<dict>
         					<key>Processor</key>
         					<string>com.github.haircut.processors/DatetimeOutputter</string>
-					
     						</dict>
+					</dict>
 					</array>
-<key>Processor</key>
-				    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-		 </dict>
+					<dict>
+					<key>Processor</key>
+				    	<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		 			</dict>
 		 			<dict>
 		 				<key>Arguments</key>
 		 				<dict>
