@@ -61,17 +61,14 @@
 					<string>%NOTES%/string>
 			    	</dict>
 			</dict>	
-					<key>Process</key>
-					<array>
     					<dict>
         					<key>Processor</key>
         					<string>com.github.haircut.processors/DatetimeOutputter</string>
     	
 					</dict>
-					</array>
 					<dict>
-					<key>Processor</key>
-				    	<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+						<key>Processor</key>
+				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		 			</dict>
 		 			<dict>
 		 				<key>Arguments</key>
