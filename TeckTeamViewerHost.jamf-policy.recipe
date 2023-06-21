@@ -11,8 +11,7 @@
 			<key>CATEGORY</key>
 			<string>Productivity</string>
 			<key>INFO</key>
-			<string>TeamViewer Host was uploaded by Ash Jamf Administrator./
-			If this message is not part of the Info, do not use</string>
+			<string>TeamViewer Host was uploaded by Ash Jamf Administrator.If this message is not part of the Info, do not use</string>
 			<key>NOTES</key>
 			<string>Uploaded via Autopkg %datetime%</string>
 			<key>NAME</key>
