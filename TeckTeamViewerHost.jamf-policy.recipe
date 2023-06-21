@@ -11,9 +11,10 @@
 			<key>CATEGORY</key>
 			<string>Productivity</string>
 			<key>INFO</key>
-			<string>TeamViewer Host was uploaded by Ash Jamf Administrator. If this message is not part of the Info, do not use</string>
+			<string>TeamViewer Host was uploaded by Ash Jamf Administrator./
+			If this message is not part of the Info, do not use</string>
 			<key>NOTES</key>
-			<string>"Uploaded via Autopkg %datetime%</string>
+			<string>Uploaded via Autopkg %datetime%</string>
 			<key>NAME</key>
 			<string>TeamViewerHost</string>
       			<key>DOWNLOADURL</key>
@@ -45,12 +46,21 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			</dict>	
+			</dict>
+			<dict>
+        			<key>Processor</key>
+        			<string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+        			<key>datetime_format</key>
+        			<string>%A, %B %e, %Y</string>
+    				</dict>
+  			</dict>
 			<dict>
 				<key>Processor</key>
 				<string>URLDownloader</string>
 					<key>Arguments</key>
-				<dict>
+				   <dict>
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
@@ -59,13 +69,8 @@
 					<string>%CATEGORY%</string>
 					<key>pkg_notes</key>
 					<string>%NOTES%/string>
-			    	</dict>
-			</dict>	
-    					<dict>
-        					<key>Processor</key>
-        					<string>com.github.haircut.processors/DatetimeOutputter</string>
-    	
-					</dict>
+			    	   </dict>
+				</dict>	
 					<dict>
 						<key>Processor</key>
 				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
@@ -86,13 +91,5 @@
 	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 		 			</dict>			
 				</array>
-					<key>Process</key>
-					<array>
-    						<dict>
-        					<key>Processor</key>
-        					<string>com.github.haircut.processors/DatetimeOutputter</string>
-					
-    						</dict>
-					</array>
 	</dict>
 </plist>
