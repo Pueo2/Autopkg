@@ -45,6 +45,15 @@
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 			</dict>	
 			<dict>
+        			<key>Processor</key>
+       				 <string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+       				 <key>datetime_format</key>
+       				 <string>%A, %B %e, %Y</string>
+    				</dict>
+  			</dict>
+			<dict>
 				<key>Processor</key>
 				<string>URLDownloader</string>
 					<key>Arguments</key>
@@ -54,7 +63,9 @@
 					<key>filename</key>
 					<string>TeckTeamViewerTensor.pkg</string>
 					<key>pkg_category</key>
-					<string>%CATEGORY%</string>	
+					<string>%CATEGORY%</string>
+					<key>pkg_notes</key>
+					<string>Unloaded via Autopkg %datetime%</string>
 			    </dict>
 			</dict>	
 			<dict>	   
