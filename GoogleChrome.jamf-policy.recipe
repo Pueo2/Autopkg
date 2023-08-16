@@ -20,8 +20,6 @@
 			<string>Business</string>
 			<key>POLICY_NAME</key>
 			<string>Install Latest %NAME%</string>
-			<key>POLICY_TEMPLATE</key>
-			<string>Policy_Template.xml</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -29,7 +27,7 @@
 	<string>com.github.autopkg.grahampugh-recipes.jamf.GoogleChrome-pkg-upload</string>
 	<key>ParentRecipeTrustInfo</key>
   <key>MinimumVersion</key>
-	<string>2.3</string>
+	<string>2.0</string>
 	<key>Process</key>
   <array>
 				<dict>
