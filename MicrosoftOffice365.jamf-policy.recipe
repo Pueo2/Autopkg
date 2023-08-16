@@ -60,6 +60,7 @@
         					<key>datetime_format</key>
         					<string>%A, %B %e, %Y</string>
     						</dict>
+					</dict>
 					<dict>
 					<key>Processor</key>
 					<string>URLDownloader</string>
