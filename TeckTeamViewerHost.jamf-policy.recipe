@@ -18,13 +18,15 @@
       			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
+			<key>POLICY_TEMPLATE/key>
+			<string>Policy_Template.xml</string>
 			<key>POLICY_NAME</key>
 			<string>03.Install Latest %NAME%</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>2.0</string>
+	<string>2.3</string>
 	<key>Process</key>
 	<array>
 	 	    <dict>
