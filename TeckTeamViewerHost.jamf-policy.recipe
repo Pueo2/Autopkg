@@ -16,6 +16,8 @@
 			<string>TeamViewerHost</string>
       			<key>DOWNLOADURL</key>
       			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
+			<key>POLICY_TEMPLATE</key>
+			<string>Policy_Template.xml</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
 			<key>POLICY_TEMPLATE/key>
