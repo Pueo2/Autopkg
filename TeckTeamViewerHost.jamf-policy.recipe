@@ -20,8 +20,6 @@
 			<string>Policy_Template.xml</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
-			<key>POLICY_TEMPLATE/key>
-			<string>Policy_Template.xml</string>
 			<key>POLICY_NAME</key>
 			<string>03.Install Latest %NAME%</string>
 			<key>UPDATE_PREDICATE</key>
