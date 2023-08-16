@@ -51,8 +51,16 @@
 					</dict>
 					<key>Processor</key>
 					<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-				</dict>	
-				<dict>
+				</dict>
+					<dict>
+        					<key>Processor</key>
+        					<string>com.github.haircut.processors/DatetimeOutputter</string>
+						<key>Arguments</key>
+						<dict>
+        					<key>datetime_format</key>
+        					<string>%A, %B %e, %Y</string>
+    						</dict>
+					<dict>
 					<key>Processor</key>
 					<string>URLDownloader</string>
 						<key>Arguments</key>
