@@ -18,8 +18,6 @@
 				<string>Test - Enrollment</string>
 				<key>POLICY_NAME</key>
 				<string>04.Install Latest %NAME%</string>
-				<key>POLICY_TEMPLATE</key>
-				<string>Policy_Template.xml</string>
 				<key>SOFTWARETITLE1</key>
 				<string>Office</string>
 				<key>SOFTWARETITLE2</key>
@@ -72,8 +70,6 @@
 			 				<dict>
 			 					<key>policy_name</key>
 			 					<string>%POLICY_NAME%</string>
-								<key>policy_template</key>
-								<string>%POLICY_TEMPLATE%</string>
 			 					<key>policy_category</key>
 			 					<string>%POLICY_CATEGORY%</string>
 			 					<key>replace_policy</key>
