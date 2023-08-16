@@ -20,8 +20,6 @@
 			<string>Browsers</string>
 			<key>POLICY_NAME</key>
 			<string>Install Latest %NAME%</string>
-			<key>POLICY_TEMPLATE</key>
-			<string>Policy_Template.xml</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
     </dict>
