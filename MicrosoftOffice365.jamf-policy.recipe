@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 		<key>Description</key>
-		<string>Downloads the latest Teck branded TeamViewer image</string>
+		<string>Downloads the latest M365 package from MS.</string>
 		<key>Identifier</key>
 		<string>com.local.pueo2.jamf-policy.MicrosoftOffice365</string>
 		<key>Input</key>
@@ -74,8 +74,8 @@
 			 				<dict>
 			 					<key>policy_name</key>
 			 					<string>%POLICY_NAME%</string>
-								<key>POLICY_TEMPLATE</key>
-								<string>Policy_Template.xml</string>
+								<key>policy_template</key>
+								<string>%POLICY_TEMPLATE%</string>
 			 					<key>policy_category</key>
 			 					<string>%POLICY_CATEGORY%</string>
 			 					<key>replace_policy</key>
