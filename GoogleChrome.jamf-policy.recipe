@@ -26,8 +26,6 @@
   <key>ParentRecipe</key>
 	<string>com.github.autopkg.grahampugh-recipes.jamf.GoogleChrome-pkg-upload</string>
 	<key>ParentRecipeTrustInfo</key>
-  <key>MinimumVersion</key>
-	<string>2.0</string>
 	<key>Process</key>
   <array>
 				<dict>
