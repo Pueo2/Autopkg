@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Downloads the latest M365 package from MS.</string>
 		<key>Identifier</key>
-		<string>com.local.pueo2.jamf-policy.MicrosoftOffice365</string>
+		<string>com.github.Pueo2.autopkg.Office365</string>
 		<key>Input</key>
 		<dict>
 				<key>CATEGORY</key>
@@ -13,7 +13,7 @@
 				<key>DOWNLOADURL</key>
 				<string>https://go.microsoft.com/fwlink/?linkid=</string>
 				<key>INFO</key>
-				<string>O365 was uploaded by Ash Jamf Administrator. If this message is not part of the Info, do not use</string>
+				<string>O365 was added to Jamf Pro via Autopgkr</string>
 				<key>NAME</key>
 				<string>Microsoft Office 365</string>
 				<key>POLICY_CATEGORY</key>
