@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+		<key>Description</key>
+		<string>Downloads the latest MS Company Portal.</string>
+		<key>Identifier</key>
+		<string>com.local.pueo2.jamf-policy.MS-Company-Portal</string>
+		<key>Input</key>
+		<dict>
+				<key>CATEGORY</key>
+				<string>Productivity</string>
+				<key>DOWNLOADURL</key>
+				<string>https://go.microsoft.com/fwlink/?linkid=</string>
+				<key>INFO</key>
+				<string>Companyy Portal was added to Jamf Pro via Autopgkr</string>
+				<key>NAME</key>
+				<string>Microsoft Compnay Portal</string>
+				<key>POLICY_CATEGORY</key>
+				<string>Test - Enrollment</string>
+				<key>POLICY_NAME</key>
+				<string>03.Install Latest %NAME%</string>
+				<key>POLICY_TEMPLATE</key>
+				<string>Policy_Template.xml</string>				
+				<key>SOFTWARETITLE1</key>
+				<string>Company</string>
+				<key>SOFTWARETITLE2</key>
+				<string>Portal</string>
+				<key>VENDOR</key>
+				<string>Microsoft</string>
+				<key>PRODUCTID</key>
+				<string>862280</string>
+				<key>UPDATE_PREDICATE</key>
+				<string>pkg_uploaded == True</string>
+		</dict>
+			<key>MinimumVersion</key>
+			<string>2.3</string>
+			<key>Process</key>
+		<array>
+ 	    	<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>category_name</key>
+					<string>%CATEGORY%</string>
+					<key>replace_category</key>
+					<string>True</string>
+					<key>pkg_info</key>
+					<string>%INFO%</string>
+					<key>category_priority</key>
+					<string>8</string>
+				</dict>
+					<key>Processor</key>
+					<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+				</dict>
+					<dict>
+        					<key>Processor</key>
+        					<string>com.github.haircut.processors/DatetimeOutputter</string>
+						<key>Arguments</key>
+						<dict>
+        					<key>datetime_format</key>
+        					<string>%A, %B %e, %Y</string>
+    					</dict>
+					</dict>
+					<dict>
+						<key>Processor</key>
+						<string>URLDownloader</string>
+							<key>Arguments</key>
+							<dict>
+								<key>url</key>
+								<string>%DOWNLOADURL%%PRODUCTID%</string>
+								<key>filename</key>
+								<string>%VENDOR%-%SOFTWARETITLE1%-%SOFTWARETITLE2%.pkg</string>
+								<key>pkg_category</key>
+								<string>%CATEGORY%</string>
+								<key>pkg_notes</key>
+								<string>Uploaded via Autopkg %datetime%</string>
+					    	</dict>
+					</dict>
+					<dict>	   
+								<key>Processor</key>
+									    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+					</dict>
+							 			<dict>
+							 				<key>Arguments</key>
+							 			<dict>
+							 					<key>policy_name</key>
+							 					<string>%POLICY_NAME%</string>
+												<key>policy_template</key>
+												<string>%POLICY_TEMPLATE%</string>
+							 					<key>policy_category</key>
+							 					<string>%POLICY_CATEGORY%</string>
+							 					<key>replace_policy</key>
+							 					<string>True</string>
+							 			</dict>
+							 				<key>Processor</key>
+			 											<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+							 			</dict>			
+						</array>
+					</dict>
+					</plist>
