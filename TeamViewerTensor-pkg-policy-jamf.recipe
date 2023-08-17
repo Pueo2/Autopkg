@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Teck branded TeamViewer Tensor for SS and SD. Uploads into Jamf</string>
+	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr</string>
 	<key>Identifier</key>
-	<string>local.jamf.teck.teamviewertensor-policy</string>
+	<string>com.github.Pueo2.autopkg.TeamViewerTensor</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
