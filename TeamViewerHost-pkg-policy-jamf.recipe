@@ -5,13 +5,13 @@
 	<key>Description</key>
 	<string>Downloads the latest Teck branded TeamViewer image and uploads into Enrollment Policy</string>
 	<key>Identifier</key>
-	<string>com.local.pueo2.jamfpolicy.teckteamviewer</string>
+	<string>com.github.Pueo2.autopkg.TeamViewerHost</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
 			<string>Productivity</string>
 			<key>INFO</key>
-			<string>TeamViewer Host was uploaded by Ash Jamf Administrator.If this message is not part of the Info, do not use</string>
+			<string>TeamViewer Host was added to Jamf Pro via Autopgkr</string>
 			<key>NAME</key>
 			<string>TeamViewerHost</string>
       			<key>DOWNLOADURL</key>
