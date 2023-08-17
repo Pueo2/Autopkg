@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest Chrome. Uploads into Jamf</string>
 	<key>Identifier</key>
-	<string>com.github.pueo2.autopkg.GoogleChrome.</string>
+	<string>local.jamf.teck.googlechrome-policy</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
@@ -55,13 +55,19 @@
 			</dict>
 			<dict>
 				<key>Processor</key>
-				    <key>url</key>
-				    <string>%DOWNLOADURL%</string>
-					<key>filename</key>
-					<string>GoogleChrome.pkg</string>
-					<key>pkg_category</key>
-					<string>%CATEGORY%</string>	
-			    </dict>
+				<string>URLDownloader</string>
+					<key>Arguments</key>
+					<dict>
+				    	<key>url</key>
+				    	<string>%DOWNLOADURL%</string>
+						<key>filename</key>
+						<string>GoogleChrome.pkg</string>
+						<key>pkg_category</key>
+						<string>%CATEGORY%</string>
+						<key>replace_package</key>
+						<string>True</string>
+			    	</dict>
+				</dict>	
 			<dict>	   
 				   <key>Processor</key>
 				    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
