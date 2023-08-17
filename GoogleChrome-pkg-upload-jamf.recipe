@@ -58,12 +58,14 @@
 				<string>URLDownloader</string>
 					<key>Arguments</key>
 					<dict>
-				    	<key>url</key>
-				    	<string>%DOWNLOADURL%</string>
+				    	       <key>url</key>
+				    	        <string>%DOWNLOADURL%</string>
 						<key>filename</key>
 						<string>GoogleChrome.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
+						<key>pkg_notes</key>
+						<string>Uploaded via Autopkg %datetime%</string>
 						<key>replace_package</key>
 						<string>True</string>
 			    	</dict>
