@@ -115,7 +115,6 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			</dict>
 			<dict>
         			<key>Processor</key>
         			<string>com.github.haircut.processors/DatetimeOutputter</string>
