@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
-			<string>Productivity</string>
+			<string>Business</string>
 			<key>INFO</key>
 			<string>TeamViewer Host was added to Jamf Pro via Autopgkr</string>
 			<key>NAME</key>
@@ -22,6 +22,8 @@
 			<string>Test - Enrollment</string>
 			<key>POLICY_NAME</key>
 			<string>03.Install Latest %NAME%</string>
+			<key>VENDOR</key>
+			<string>Teck</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -50,7 +52,7 @@
 				<key>Arguments</key>
 				<dict>
         			<key>datetime_format</key>
-        			<string>%A, %B %e, %Y</string>
+        			<string>%A, %B %e, %Y at %l:%M %p</string>
     				</dict>
   			</dict>
 			<dict>
@@ -61,9 +63,11 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>TeckTeamViewerHost.pkg</string>
+					<string>%VENDOR%-%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>True</string>
 					<key>pkg_notes</key>
 					<string>Uploaded via Autopkg %datetime%</string>
 			    	   </dict>
@@ -82,7 +86,7 @@
 		 					<key>policy_category</key>
 		 					<string>%POLICY_CATEGORY%</string>
 		 					<key>replace_policy</key>
-		 					<string>True</string>
+		 					<string>False</string>
 		 				</dict>
 		 				<key>Processor</key>
 	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
