@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest Citrix Workspace installer and uploads into Enrollment Policy</string>
+	<key>Identifier</key>
+	<string>com.github.Pueo2.autopkg.Citrix-Workspace</string>
+	<key>Input</key>
+	<dict>
+			<key>CATEGORY</key>
+			<string>Productivity</string>
+			<key>INFO</key>
+			<string>Citrix-Workspace was added to Jamf Pro via Autopgkr</string>
+			<key>NAME</key>
+			<string>Citrix-Workspace</string>
+      			<key>DOWNLOADURL</key>
+     		   			<string>https://downloads.citrix.com/22054/CitrixWorkspaceApp.dmg?__gda__=exp=1692383569~acl=/*~hmac=c078a615a3f429882340d886f1f1b37a437fe56f4575698377f35dbe91925b46</string>
+			<key>POLICY_TEMPLATE</key>
+			<string>Policy_Template.xml</string>
+			<key>POLICY_CATEGORY</key>
+			<string>Test - Enrollment</string>
+			<key>POLICY_NAME</key>
+			<string>10.Install Latest %NAME%</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Teck</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == True</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>Process</key>
+	<array>
+	 	    <dict>
+				<key>Arguments</key>
+				<dict>
+					<key>category_name</key>
+					<string>%CATEGORY%</string>
+					<key>replace_category</key>
+					<string>True</string>
+					<key>pkg_info</key>
+					<string>%INFO%</string>
+					<key>category_priority</key>
+					<string>8</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+			</dict>
+			<dict>
+        			<key>Processor</key>
+        			<string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+        			<key>datetime_format</key>
+        			<string>%A, %B %e, %Y at %l:%M %p</string>
+    				</dict>
+  			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>URLDownloader</string>
+					<key>Arguments</key>
+				   <dict>
+					<key>url</key>
+					<string>%DOWNLOADURL%</string>
+					<key>filename</key>
+					<string>%SOFTWARETITLE1%-%NAME%.pkg</string>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>True</string>
+					<key>pkg_notes</key>
+					<string>Uploaded via Autopkg %datetime%</string>
+			    	   </dict>
+				</dict>	
+					<dict>
+						<key>Processor</key>
+				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		 			</dict>
+		 			<dict>
+		 				<key>Arguments</key>
+		 				<dict>
+		 					<key>policy_name</key>
+		 					<string>%POLICY_NAME%</string>
+							<key>policy_template</key>
+							<string>%POLICY_TEMPLATE%</string>
+		 					<key>policy_category</key>
+		 					<string>%POLICY_CATEGORY%</string>
+		 					<key>replace_policy</key>
+		 					<string>False</string>
+		 				</dict>
+		 				<key>Processor</key>
+	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		 			</dict>			
+				</array>
+	</dict>
+</plist>
