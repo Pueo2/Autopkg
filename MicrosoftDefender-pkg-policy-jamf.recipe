@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+er<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -14,7 +14,7 @@
 			<string>Microsoft Defender was added to Jamf Pro via Autopgkr</string>
 			<key>NAME</key>
 			<string>Microsoft Defender</string>
-      		<key>POLICY_TEMPLATE</key>
+      			<key>POLICY_TEMPLATE</key>
 			<string>Policy_Template.xml</string>
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
@@ -25,7 +25,7 @@
   			<key>DOWNLOADURL</key>
   			<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
 			<key>SOFTWARETITLE1</key>
-			<string>Teck</string>
+			<string>Defender</string>
 			<key>VENDOR</key>
 			<string>Microsoft</string>
 			<key>VERSIONTYPE</key>
