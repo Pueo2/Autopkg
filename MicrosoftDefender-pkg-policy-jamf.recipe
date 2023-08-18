@@ -102,8 +102,9 @@
 			                 </array>
 			              </dict>
 			  	     </dict>
-				<key>Arguments</key>
-				<dict>
+			    <dict>
+				  <key>Arguments</key>
+				  <dict>
 					<key>category_name</key>
 					<string>%CATEGORY%</string>
 					<key>replace_category</key>
@@ -112,10 +113,11 @@
 					<string>%INFO%</string>
 					<key>category_priority</key>
 					<string>8</string>
-				</dict>
+				   </dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			<dict>
+			     </dict>			
+			     <dict>
         			<key>Processor</key>
         			<string>com.github.haircut.processors/DatetimeOutputter</string>
 				<key>Arguments</key>
