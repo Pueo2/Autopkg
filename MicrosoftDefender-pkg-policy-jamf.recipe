@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest Microsoft ATP Defener application and uploads into the Enrollment Policy</string>
+	<key>Identifier</key>
+	<string>com.github.Pueo2.autopkg.microsoftdefender</string>
+	<key>Input</key>
+	<dict>
+			<key>CATEGORY</key>
+			<string>Productivity</string>
+			<key>INFO</key>
+			<string>Microsoft Defender was added to Jamf Pro via Autopgkr</string>
+			<key>NAME</key>
+			<string>Microsoft Defender</string>
+      		<key>POLICY_TEMPLATE</key>
+			<string>Policy_Template.xml</string>
+			<key>POLICY_CATEGORY</key>
+			<string>Test - Enrollment</string>
+			<key>POLICY_NAME</key>
+			<string>14.Install Latest %NAME%</string>
+			<key>PRODUCTID</key>
+			<string>2097502</string>
+  			<key>DOWNLOADURL</key>
+  			<string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Teck</string>
+			<key>VERSIONTYPE</key>
+			<string>CFBundleShortVersionString</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == True</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>Process</key>
+	<array>
+	    <dict>
+	            <key>Arguments</key>
+	            <dict>
+	              <key>destination_path</key>
+	              <string>%RECIPE_CACHE_DIR%/downloads/unpack</string>
+	              <key>flat_pkg_path</key>
+	              <string>%pathname%</string>
+	            </dict>
+	              <key>Processor</key>
+	              <string>FlatPkgUnpacker</string>
+	            </dict>
+	            <dict>
+	               <key>Arguments</key>
+	               <dict>
+	                  <key>pattern</key>
+	                  <string>%RECIPE_CACHE_DIR%/downloads/unpack/*wdav*.pkg</string>
+	               </dict>
+	               <key>Processor</key>
+	               <string>FileFinder</string>
+	            </dict>
+	            <dict>
+	               <key>Arguments</key>
+	               <dict>
+	                  <key>destination_path</key>
+	                  <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
+	                  <key>pkg_payload_path</key>
+	                  <string>%found_filename%/Payload</string>
+	               </dict>
+				 <key>Processor</key>
+				 <string>PkgPayloadUnpacker</string>
+			</dict>
+			<dict>
+				 <key>Arguments</key>
+				 <dict>
+				 <key>input_plist_path</key>
+				 <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Defender.app/Contents/Info.plist</string>
+				 <key>plist_version_key</key>
+				 <string>%VERSIONTYPE%</string>
+		   </dict>
+		   <key>Processor</key>
+		   <string>Versioner</string>
+		  </dict>
+			<dict>
+				<key>Arguments</key>
+				<dict>
+					<key>category_name</key>
+					<string>%CATEGORY%</string>
+					<key>replace_category</key>
+					<string>True</string>
+					<key>pkg_info</key>
+					<string>%INFO%</string>
+					<key>category_priority</key>
+					<string>8</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+			</dict>
+			<dict>
+        			<key>Processor</key>
+        			<string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+        			<key>datetime_format</key>
+        			<string>%A, %B %e, %Y at %l:%M %p</string>
+    				</dict>
+  			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>URLDownloader</string>
+					<key>Arguments</key>
+				   <dict>
+					<key>url</key>
+					<string>%DOWNLOADURL%</string>
+					<key>filename</key>
+					<string>%SOFTWARETITLE1%-%NAME%.pkg</string>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>True</string>
+					<key>pkg_notes</key>
+					<string>Uploaded via Autopkg %datetime%</string>
+			    	   </dict>
+				</dict>	
+					<dict>
+						<key>Processor</key>
+				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		 			</dict>
+		 			<dict>
+		 				<key>Arguments</key>
+		 				<dict>
+		 					<key>policy_name</key>
+		 					<string>%POLICY_NAME%</string>
+							<key>policy_template</key>
+							<string>%POLICY_TEMPLATE%</string>
+		 					<key>policy_category</key>
+		 					<string>%POLICY_CATEGORY%</string>
+		 					<key>replace_policy</key>
+		 					<string>False</string>
+		 				</dict>
+		 				<key>Processor</key>
+	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		 			</dict>			
+				</array>
+	</dict>
+</plist>
