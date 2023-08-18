@@ -21,7 +21,7 @@
 			<key>POLICY_CATEGORY</key>
 			<string>Test - Enrollment</string>
 			<key>POLICY_NAME</key>
-			<string>03.Install Latest %NAME%</string>
+			<string>09.Install Latest %NAME%</string>
 			<key>VENDOR</key>
 			<string>Teck</string>
 			<key>UPDATE_PREDICATE</key>
