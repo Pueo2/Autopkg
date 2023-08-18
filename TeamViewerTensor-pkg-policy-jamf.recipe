@@ -63,7 +63,7 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>%SOFTWARETITLE%-%NAME%.pkg</string>
+					<string>%SOFTWARETITLE1%-%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
