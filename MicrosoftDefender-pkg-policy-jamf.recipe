@@ -67,7 +67,7 @@
 	               </dict>
 				 <key>Processor</key>
 				 <string>PkgPayloadUnpacker</string>
-			</dict>
+		     </dict>
 			<dict>
 				 <key>Arguments</key>
 				 <dict>
@@ -75,10 +75,10 @@
 				 <string>%RECIPE_CACHE_DIR%/downloads/payload/Microsoft Defender.app/Contents/Info.plist</string>
 				 <key>plist_version_key</key>
 				 <string>%VERSIONTYPE%</string>
-		   </dict>
+		                 </dict>
 		   <key>Processor</key>
 		   <string>Versioner</string>
-		  </dict>
+		        </dict>
 		  <dict>
 			  <key>Processor</key>
 			              <string>PkgCopier</string>
@@ -89,7 +89,7 @@
 			                 <key>pkg_path</key>
 			                 <string>%RECIPE_CACHE_DIR%/%VENDOR%_%SOFTWARETITLE1%_%version%.pkg</string>
 			              </dict>
-			           </dict>
+		  </dict>
 			           <dict>
 			              <key>Processor</key>
 			              <string>PathDeleter</string>
@@ -101,6 +101,7 @@
 			                    <string>%RECIPE_CACHE_DIR%/downloads/payload</string>
 			                 </array>
 			              </dict>
+			  	     </dict>
 				<key>Arguments</key>
 				<dict>
 					<key>category_name</key>
