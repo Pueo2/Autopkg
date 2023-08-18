@@ -65,6 +65,8 @@
 				    	       <key>url</key>
 				    	        <string>%DOWNLOADURL%</string>
 						<key>pkg_category</key>
+						<key>filename</key>
+						<string>%VENDOR%-%SOFTWARETITLE1%.pkg</string>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
 						<string>Uploaded via Autopkg %datetime%</string>
