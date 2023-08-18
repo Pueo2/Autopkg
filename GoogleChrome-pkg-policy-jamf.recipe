@@ -22,6 +22,10 @@
 			<string>05.Install Latest %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>Policy_Template.xml</string>
+			<key>VENDOR</key>
+			<string>Google</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Chrome</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -61,7 +65,7 @@
 				    	       <key>url</key>
 				    	        <string>%DOWNLOADURL%</string>
 						<key>filename</key>
-						<string>GoogleChrome.pkg</string>
+						<string>%VENDOR%-%SOFTWARETITLE1%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
