@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr</string>
+	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr<</string>
 	<key>Identifier</key>
 	<string>com.github.Pueo2.autopkg.TeamViewerTensor</string>
 	<key>Input</key>
@@ -11,13 +11,15 @@
 			<key>CATEGORY</key>
 			<string>Business</string>
 			<key>INFO</key>
-			<string>TeamViewer Tensor was uploaded by Ashley Paul James Jamf Administrator. If this message is not part of the Info, do not use</string>
+			<string>TeamViewer Tensor was added to Jamf Pro via Autopgk</string>
 			<key>NAME</key>
 			<string>TeamViewerTensor</string>
-      <key>DOWNLOADURL</key>
-      <string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewer-idc6me8qb9.pkg</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Teck</string>
+      			<key>DOWNLOADURL</key>
+      			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewer-idc6me8qb9.pkg</string>
 			<key>POLICY_CATEGORY</key>
-			<string>Business</string>
+			<string>Test - Enrollment</string>
 			<key>POLICY_NAME</key>
 			<string>Install Latest %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
@@ -50,7 +52,7 @@
 				<key>Arguments</key>
 				<dict>
        				 <key>datetime_format</key>
-       				 <string>%A, %B %e, %Y</string>
+       				 <string>%A, %B %e, %Y at %l:%M %p</string>
     				</dict>
   			</dict>
 			<dict>
@@ -64,6 +66,8 @@
 					<string>TeckTeamViewerTensor.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>True</string>
 					<key>pkg_notes</key>
 					<string>Unloaded via Autopkg %datetime%</string>
 			    </dict>
@@ -82,7 +86,7 @@
 		 					<key>policy_category</key>
 		 					<string>%POLICY_CATEGORY%</string>
 		 					<key>replace_policy</key>
-		 					<string>True</string>
+		 					<string>False</string>
 		 				</dict>
 		 				<key>Processor</key>
 	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
