@@ -37,7 +37,7 @@
 					<key>category_name</key>
 					<string>%CATEGORY%</string>
 					<key>replace_category</key>
-					<string>True</string>
+					<string>False</string>
 					<key>pkg_info</key>
 					<string>%INFO%</string>
 					<key>category_priority</key>
@@ -63,7 +63,7 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>TeckTeamViewerTensor.pkg</string>
+					<string>%SOFTWARETITLE%-%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
