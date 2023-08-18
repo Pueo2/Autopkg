@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr<</string>
+	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr</string>
 	<key>Identifier</key>
 	<string>com.github.Pueo2.autopkg.TeamViewerTensor</string>
 	<key>Input</key>
