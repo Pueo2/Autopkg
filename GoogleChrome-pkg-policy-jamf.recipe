@@ -63,9 +63,7 @@
 					<key>Arguments</key>
 					<dict>
 				    	       <key>url</key>
-				    	        <string>%DOWNLOADURL%</string>
-						<key>filename</key>
-						<string>%VENDOR%-%SOFTWARETITLE1%.pkg</string>						
+				    	        <string>%DOWNLOADURL%</string>					
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
