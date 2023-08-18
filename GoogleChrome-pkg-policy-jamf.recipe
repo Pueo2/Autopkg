@@ -68,7 +68,7 @@
 						<string>Uploaded via Autopkg %datetime%</string>
 						<key>predictate</key>
 						<string>%UPDATE_PREDICATE%</string>
-						<key>replace_package</key>
+						<key>replace_pkg</key>
 						<string>True</string>
 			    	</dict>
 				</dict>	
