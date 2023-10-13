@@ -15,7 +15,7 @@
 			<key>NAME</key>
 			<string>Citrix-Workspace</string>
       			<key>DOWNLOADURL</key>
-     		   			<string>https://downloads.citrix.com/22054/CitrixWorkspaceApp.dmg?__gda__=exp=1692383569~acl=/*~hmac=c078a615a3f429882340d886f1f1b37a437fe56f4575698377f35dbe91925b46</string>
+     		   			<string>https://downloads.citrix.com/22054/CitrixWorkspaceApp.dmg?</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>Policy_Template.xml</string>
 			<key>POLICY_CATEGORY</key>
