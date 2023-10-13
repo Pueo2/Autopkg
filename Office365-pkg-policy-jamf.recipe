@@ -74,6 +74,8 @@
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
 						<string>Uploaded via Autopkg %datetime%</string>
+						<key>replace_pkg</key>
+						<string>True</string>
 				    	</dict>
 				</dict>	
 				<dict>	   
