@@ -20,6 +20,8 @@
 	<string>Portal</string>
 	<key>VENDOR</key>
 	<string>Microsoft</string>
+	<key>VERSIONTYPE</key>
+        <string>CFBundleShortVersionString</string>
 	<key>PRODUCTID</key>
 	<string>862280</string>
 	<key>UPDATE_PREDICATE</key>
