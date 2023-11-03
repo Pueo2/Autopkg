@@ -1,0 +1,25 @@
+Recipe:
+  Identifier: com.jamf.auto.pkg.Python
+  Name: Python
+  Description: AutoPkg recipe to download the latest Python installer from python.org
+  Input:
+    # You can specify the Python version you want to download here
+    ARGS: "--download-id=3.11.0"
+  ParentRecipe: URLDownloader
+  MinimumVersion: 1.0.0
+
+Process:
+  - name: download
+    args:
+      URL: "{{URL}}"
+      NAME: "python-{{ARGS.download-id}}-macosx10.9.pkg"
+      FILENAME: "python-{{ARGS.download-id}}-macosx10.9.pkg"
+  - name: EndOfCheckPhase
+    args:
+      check_path: "${RECIPE_CACHE_DIR}/python-{{ARGS.download-id}}-macosx10.9.pkg"
+
+Pkg:
+  PackageVersion: {{ARGS.download-id}}
+  PackageName: Python
+  PackageIdentifier: org.python.Python
+  PkgInfoURL: https://www.python.org/downloads/mac-osx/
