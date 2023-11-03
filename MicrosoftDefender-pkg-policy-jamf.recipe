@@ -159,7 +159,7 @@
 		 					<key>policy_category</key>
 		 					<string>%POLICY_CATEGORY%</string>
 		 					<key>replace_policy</key>
-		 					<string>False</string>
+		 					<string>True</string>
 		 				</dict>
 		 				<key>Processor</key>
 	 				<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
