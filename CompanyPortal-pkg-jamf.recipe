@@ -8,8 +8,6 @@
 	<string>com.github.Pueo2.pkg.Company-Portal</string>
 	<key>Input</key>
 <dict>
-	<key>CATEGORY</key>
-	<string>Test - Enrollment</string>
 	<key>DOWNLOADURL</key>
 	<string>https://go.microsoft.com/fwlink/?linkid=</string>
 	<key>INFO</key>
