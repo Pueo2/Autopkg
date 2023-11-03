@@ -1,5 +1,5 @@
 Recipe:
-  Identifier: com.jamf.auto.pkg.Python
+  Identifier: com.pkg-Python
   Name: Python
   Description: AutoPkg recipe to download the latest Python installer from python.org
   Input:
