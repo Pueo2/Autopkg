@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Downloads the latest M365 package from MS and uploads as a PKG into Jamf.</string>
 		<key>Identifier</key>
-		<string>com.github.Pueo2.autopkg.Office365</string>
+		<string>com.github.Pueo2.autopkg.pkg.Office365</string>
 		<key>Input</key>
 		<dict>
 				<key>CATEGORY</key>
