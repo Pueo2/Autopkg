@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest Teck branded TeamViewer image and uploads into Jamf Pro as a pkg</string>
+	<key>Identifier</key>
+	<string>com.github.Pueo2.autopkg.TeamViewerHost</string>
+	<key>Input</key>
+	<dict>
+			<key>CATEGORY</key>
+			<string>Business</string>
+			<key>INFO</key>
+			<string>TeamViewer Host was added to Jamf Pro via Autopgkr</string>
+			<key>NAME</key>
+			<string>TeamViewerHost</string>
+      			<key>DOWNLOADURL</key>
+      			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
+			<key>VENDOR</key>
+			<string>Teck</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == True</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>Process</key>
+	<array>
+	 	    <dict>
+				<key>Arguments</key>
+				<dict>
+					<key>category_name</key>
+					<string>%CATEGORY%</string>
+					<key>replace_category</key>
+					<string>True</string>
+					<key>pkg_info</key>
+					<string>%INFO%</string>
+					<key>category_priority</key>
+					<string>8</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+			</dict>
+			<dict>
+        			<key>Processor</key>
+        			<string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+        			<key>datetime_format</key>
+        			<string>"%A, %B %e, %Y at %l:%M %p"</string>
+    				</dict>
+  			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>URLDownloader</string>
+					<key>Arguments</key>
+				   <dict>
+					<key>url</key>
+					<string>%DOWNLOADURL%</string>
+					<key>filename</key>
+					<string>%VENDOR%-%NAME%.pkg</string>
+					<key>pkg_category</key>
+					<string>%CATEGORY%</string>
+					<key>replace_pkg</key>
+					<string>True</string>
+					<key>pkg_notes</key>
+					<string>Uploaded via Autopkg %datetime%</string>
+			    	   </dict>
+				</dict>	
+					<dict>
+						<key>Processor</key>
+				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		 			</dict>
+				</array>
+	</dict>
+</plist>
