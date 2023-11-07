@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest Chrome pkg and uploads into Jamf</string>
+	<key>Identifier</key>
+	<string>com.github.Pueo2.autopkg.GoogleChrome</string>
+	<key>Input</key>
+	<dict>
+			<key>CATEGORY</key>
+			<string>Browsers</string>
+			<key>INFO</key>
+			<string>Google Chrome was added to Jamf Pro via Autopgkr</string>
+			<key>NAME</key>
+			<string>Google Chrome</string>
+			<key>DOWNLOADURL</key>
+        		<string>https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg</string>
+		
+			<key>VENDOR</key>
+			<string>Google</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Chrome</string>
+			<key>UPDATE_PREDICATE</key>
+			<string>pkg_uploaded == True</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>Process</key>
+	<array>
+	 	    <dict>
+				<key>Arguments</key>
+				<dict>
+					<key>category_name</key>
+					<string>%CATEGORY%</string>
+					<key>replace_category</key>
+					<string>False</string>
+					<key>pkg_info</key>
+					<string>%INFO%</string>
+					<key>category_priority</key>
+					<string>8</string>
+				</dict>
+				<key>Processor</key>
+				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+			</dict>	
+			<dict>
+					<key>Processor</key>
+					<string>com.github.haircut.processors/DatetimeOutputter</string>
+				    <key>Arguments</key>
+				  <dict>
+					<key>datetime_format</key>
+					<string>%A, %B %e, %Y at %l:%M %p</string>
+				  </dict>
+			</dict>
+			<dict>
+				<key>Processor</key>
+				<string>URLDownloader</string>
+					<key>Arguments</key>
+					<dict>
+				    	       <key>url</key>
+				    	        <string>%DOWNLOADURL%</string>	
+						<key>filename</key>
+						<string>%VENDOR%-%SOFTWARETITLE1%.pkg</string>
+						<key>pkg_category</key>
+						<string>%CATEGORY%</string>
+						<key>pkg_notes</key>
+						<string>Uploaded via Autopkg %datetime%</string>
+						<key>predictate</key>
+						<string>%UPDATE_PREDICATE%</string>
+						<key>replace_pkg</key>
+						<string>True</string>
+			    	</dict>
+				</dict>	
+			<dict>	   
+				   <key>Processor</key>
+				    <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		 </dict>		
+	</array>
+</dict>
+</plist>GoogG
