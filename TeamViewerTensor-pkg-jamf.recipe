@@ -18,9 +18,6 @@
 			<string>Teck</string>
       			<key>DOWNLOADURL</key>
       			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewer-idc6me8qb9.pkg</string>
-			<string>PackageName</string>
-    			<key>PROCESS</key>
- 			<string>FlatPkgUnpacker</string>
     			<key>VERSIONTYPE</key>
 			<string>CFBundleShortVersionString</string>
 			<key>UPDATE_PREDICATE</key>
