@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest Microsoft ATP Defener application and uploads into the Enrollment Policy</string>
 	<key>Identifier</key>
-	<string>com.github.Pueo2.autopkg.microsoftdefender</string>
+	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.MSDefender</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
