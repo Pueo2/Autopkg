@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest MS Company Portal for use in Jamf Pro.</string>
 	<key>Identifier</key>
-	<string>com.github.Pueo2.autopkg.Company-Portal</string>
+	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.Compnay-Portal</string>
 	<key>Input</key>
 <dict>
 	<key>CATEGORY</key>
