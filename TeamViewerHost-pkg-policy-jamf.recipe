@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Teck branded TeamViewer image and uploads into Enrollment Policy</string>
+	<string>Downloads the latest Teck branded TeamViewer Host image and uploads into Enrollment Policy</string>
 	<key>Identifier</key>
-	<string>com.github.Pueo2.autopkg.TeamViewerHost</string>
+	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.TeamViewerHost</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
