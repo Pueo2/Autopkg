@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest Chrome. Uploads into Jamf</string>
 	<key>Identifier</key>
-	<string>com.github.Pueo2.autopkg.GoogleChrome</string>
+	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.GoogleChrome</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
