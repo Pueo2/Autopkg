@@ -21,8 +21,8 @@
 			<string>PackageName</string>
     			<key>PROCESS</key>
  			<string>FlatPkgUnpacker</string>
-    			<key>PKG_PATH</key>
-    			<string>%RECIPE_CACHE_DIR%/downloads/</string>
+    			<key>VERSIONTYPE</key>
+			<string>CFBundleShortVersionString</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
