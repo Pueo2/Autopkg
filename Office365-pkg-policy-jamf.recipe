@@ -5,7 +5,7 @@
 		<key>Description</key>
 		<string>Downloads the latest M365 package from MS.</string>
 		<key>Identifier</key>
-		<string>com.github.Pueo2.autopkg.Office365</string>
+		<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.MSOffice365</string>
 		<key>Input</key>
 		<dict>
 				<key>CATEGORY</key>
