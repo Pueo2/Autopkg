@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Company Branded TeamViewer Tensor was added to Jamf Pro via Autopgkr</string>
 	<key>Identifier</key>
-	<string>com.github.Pueo2.autopkg.TeamViewerTensor</string>
+	<string>com.github.Pueo2.jamf.autopkg.TeamViewerTensor</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
