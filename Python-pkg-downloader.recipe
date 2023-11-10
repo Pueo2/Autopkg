@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of Python Launcher.</string>
 	<key>Identifier</key>
-	<string>om.github.autopkg.Pueo2-recipes.pkg.Python.download</string>
+	<string>com.github.autopkg.Pueo2-recipes.pkg.Python.download</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
