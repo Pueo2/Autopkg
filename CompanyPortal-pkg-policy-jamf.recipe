@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest MS Company Portal for use in Jamf Pro.</string>
+	<string>Downloads the latest Company Portal,uploads into Jamf, creates and assigns to a Policy.  Edit POLICY_CATEGORY</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.Compnay-Portal</string>
+	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.Company-Portal</string>
 	<key>Input</key>
 <dict>
 	<key>CATEGORY</key>
@@ -13,9 +13,9 @@
 	<key>DOWNLOADURL</key>
 	<string>https://go.microsoft.com/fwlink/?linkid=</string>
 	<key>INFO</key>
-	<string>Company Portal was added to Jamf Pro via Autopgkr</string>
+	<string>Company Portal was uploaded to Jamf Pro via Autopgkr</string>
 	<key>NAME</key>
-	<string>Microsoft Compnay Portal</string>
+	<string>Microsoft Company Portal</string>
 	<key>POLICY_CATEGORY</key>
 	<string>Test - Enrollment</string>
 	<key>POLICY_NAME</key>
@@ -23,9 +23,9 @@
 	<key>POLICY_TEMPLATE</key>
 	<string>Policy_Template.xml</string>				
 	<key>SOFTWARETITLE1</key>
-	<string>Company</string>
+	<string>Auto</string>
 	<key>SOFTWARETITLE2</key>
-	<string>Portal</string>
+	<string>Company Portal</string>
 	<key>VENDOR</key>
 	<string>Microsoft</string>
 	<key>PRODUCTID</key>
@@ -69,7 +69,7 @@
 		<key>url</key>
 		<string>%DOWNLOADURL%%PRODUCTID%</string>
 		<key>filename</key>
-		<string>%VENDOR%-%SOFTWARETITLE1%-%SOFTWARETITLE2%.pkg</string>
+		<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
 		<key>pkg_category</key>
 		<string>%CATEGORY%</string>
 		<key>pkg_notes</key>
