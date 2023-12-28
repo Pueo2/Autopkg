@@ -11,7 +11,7 @@
 			<key>CATEGORY</key>
 			<string>Browsers</string>
 			<key>INFO</key>
-			<string>Google Chrome was added to Jamf Pro using Autopkgr via VHOJamfPKG01</string>
+			<string>Google Chrome was added to Jamf Pro using Autopkgr</string>
 			<key>NAME</key>
 			<string>Google Chrome</string>
 			<key>DOWNLOADURL</key>
