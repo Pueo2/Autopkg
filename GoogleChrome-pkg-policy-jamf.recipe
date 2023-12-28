@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Chrome. Uploads into Jamf</string>
+	<string>Downloads the latest Chrome,uploads into Jamf and creates and assigns to a Policy.  Edit POLICY_CATEGORY</string>
 	<key>Identifier</key>
 	<string>com.github.autopkg.Pueo2-recipes.jamfpolicy.GoogleChrome</string>
 	<key>Input</key>
@@ -25,6 +25,8 @@
 			<key>VENDOR</key>
 			<string>Google</string>
 			<key>SOFTWARETITLE1</key>
+			<string>Auto</string>
+			<key>SOFTWARETITLE2</key>
 			<string>Chrome</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
@@ -65,7 +67,7 @@
 				    	       <key>url</key>
 				    	        <string>%DOWNLOADURL%</string>	
 						<key>filename</key>
-						<string>%VENDOR%-%SOFTWARETITLE1%.pkg</string>
+						<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
