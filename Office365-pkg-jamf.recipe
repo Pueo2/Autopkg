@@ -15,11 +15,9 @@
 				<key>INFO</key>
 				<string>O365 was uploaded to Jamf Pro using Autopkgr</string>
 				<key>NAME</key>
-				<string>Microsoft Office 365</string>			
+				<string>Office 365</string>			
 				<key>SOFTWARETITLE1</key>
 				<string>Auto</string>
-				<key>SOFTWARETITLE2</key>
-				<string>O365</string>
 				<key>VENDOR</key>
 				<string>Microsoft</string>
 				<key>PRODUCTID</key>
@@ -63,7 +61,7 @@
 						<key>url</key>
 						<string>%DOWNLOADURL%%PRODUCTID%</string>
 						<key>filename</key>
-						<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+						<string>%SOFTWARETITLE1%-%VENDOR%-%NAME%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
