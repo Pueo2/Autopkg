@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Teck branded TeamViewer Host image and uploads into Jamf Pro as a pkg</string>
+	<string>Downloads the most current version of TeamViewerHost branded with a Teck logo and uploads into Jamf Pro ready for deployment</string>
 	<key>Identifier</key>
 	<string>com.github.autopkg.Pueo2-recipes.pkg.TeamViewerHost</string>
 	<key>Input</key>
