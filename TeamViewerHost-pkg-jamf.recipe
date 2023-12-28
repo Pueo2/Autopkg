@@ -16,6 +16,8 @@
 			<string>TeamViewerHost</string>
       			<key>DOWNLOADURL</key>
       			<string>https://dl.teamviewer.com/download/version_15x/CustomDesign/Install%20TeamViewerHost-idc6me8qb9.pkg</string>
+			<key>SOFTWARETITLE1</key>
+			<string>Auto</string>
 			<key>VENDOR</key>
 			<string>Teck</string>
 			<key>UPDATE_PREDICATE</key>
@@ -57,7 +59,7 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>%VENDOR%-%NAME%.pkg</string>
+					<string>%SOFTWARETITLE1%-%VENDOR%-%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
