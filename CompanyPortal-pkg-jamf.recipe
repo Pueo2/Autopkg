@@ -15,11 +15,9 @@
 	<key>INFO</key>
 	<string>Company Portal was uploaded to Jamf Pro via Autopgkr</string>
 	<key>NAME</key>
-	<string>Microsoft Company Portal</string>			
+	<string>Company Portal</string>			
 	<key>SOFTWARETITLE1</key>
 	<string>Auto</string>
-	<key>SOFTWARETITLE2</key>
-	<string>Company Portal</string>
 	<key>VENDOR</key>
 	<string>Microsoft</string>
 	<key>VERSIONTYPE</key>
@@ -65,7 +63,7 @@
 		<key>url</key>
 		<string>%DOWNLOADURL%%PRODUCTID%</string>
 		<key>filename</key>
-		<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+		<string>%SOFTWARETITLE1%-%VENDOR%-%NAME%.pkg</string>
 		<key>pkg_category</key>
 		<string>%CATEGORY%</string>
 		<key>pkg_notes</key>
