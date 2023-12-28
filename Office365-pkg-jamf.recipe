@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 		<key>Description</key>
-		<string>Downloads the latest Office 365 pkg and uploads into Jamf ready for deployment.</string>
+		<string>Downloads the latest Office 365 pkg and uploads into Jamf ready for deployment</string>
 		<key>Identifier</key>
 		<string>com.github.autopkg.Pueo2-recipes.pkg.MSOffice365</string>
 		<key>Input</key>
