@@ -69,7 +69,7 @@
 						<key>url</key>
 						<string>%DOWNLOADURL%%PRODUCTID%</string>
 						<key>filename</key>
-						<string>%SOFTWARETITLE1%:%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+						<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
