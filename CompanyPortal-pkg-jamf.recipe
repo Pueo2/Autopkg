@@ -10,6 +10,8 @@
 <dict>
 	<key>DOWNLOADURL</key>
 	<string>https://go.microsoft.com/fwlink/?linkid=</string>
+	<key>CATEGORY</key>
+	<string>Business</string>
 	<key>INFO</key>
 	<string>Company Portal was uploaded to Jamf Pro via Autopgkr</string>
 	<key>NAME</key>
