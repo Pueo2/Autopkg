@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
-			<string>Business</string>
+			<string>AutoPkg Uploads</string>
 			<key>INFO</key>
 			<string>TeamViewer Host was added to Jamf Pro via Autopgkr</string>
 			<key>NAME</key>
