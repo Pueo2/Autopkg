@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest Chrome pkg and uploads into Jamf</string>
+	<string>Downloads the latest Chrome pkg and uploads into Jamf ready for deployment</string>
 	<key>Identifier</key>
 	<string>com.github.autopkg.Pueo2-recipes.pkg.GoogleChrome</string>
 	<key>Input</key>
@@ -11,13 +11,13 @@
 			<key>CATEGORY</key>
 			<string>Browsers</string>
 			<key>INFO</key>
-			<string>Google Chrome was added to Jamf Pro via Autopgkr</string>
+			<string>Google Chrome was added to Jamf Pro using Autopkgr via VHOJamfPKG01</string>
 			<key>NAME</key>
 			<string>Google Chrome</string>
 			<key>DOWNLOADURL</key>
         		<string>https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg</string>
 			<key>SOFTWARETITLE1</key>
-			<string>APKG</string>
+			<string>Auto</string>
 			<key>VENDOR</key>
 			<string>Google</string>
 			<key>SOFTWARETITLE2</key>
@@ -61,7 +61,7 @@
 				    	       <key>url</key>
 				    	        <string>%DOWNLOADURL%</string>	
 						<key>filename</key>
-						<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+						<string>%SOFTWARETITLE1%:%VENDOR%-%SOFTWARETITLE2%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
