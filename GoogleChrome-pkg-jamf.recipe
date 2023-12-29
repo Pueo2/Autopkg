@@ -21,7 +21,7 @@
 			<key>VENDOR</key>
 			<string>Google</string>
 			<key>UPDATE_PREDICATE</key>
-			<string>pkg_uploaded == True</string>
+			<string>pkg_uploaded == false</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
