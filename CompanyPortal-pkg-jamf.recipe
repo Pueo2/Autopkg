@@ -17,7 +17,7 @@
 	<key>NAME</key>
 	<string>Company Portal</string>			
 	<key>SOFTWARETITLE1</key>
-	<string>Auto</string>
+	<string>APKG</string>
 	<key>VENDOR</key>
 	<string>Microsoft</string>
 	<key>VERSIONTYPE</key>
@@ -63,7 +63,7 @@
 		<key>url</key>
 		<string>%DOWNLOADURL%%PRODUCTID%</string>
 		<key>filename</key>
-		<string>%SOFTWARETITLE1%-%VENDOR%-%NAME%.pkg</string>
+		<string>%SOFTWARETITLE1%_%VENDOR%_%NAME%.pkg</string>
 		<key>pkg_category</key>
 		<string>%CATEGORY%</string>
 		<key>pkg_notes</key>
