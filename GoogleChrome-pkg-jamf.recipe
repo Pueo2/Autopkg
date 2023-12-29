@@ -13,15 +13,13 @@
 			<key>INFO</key>
 			<string>Google Chrome was added to Jamf Pro using Autopkgr</string>
 			<key>NAME</key>
-			<string>Google Chrome</string>
+			<string>Chrome</string>
 			<key>DOWNLOADURL</key>
         		<string>https://dl.google.com/chrome/mac/stable/accept_tos%3Dhttps%253A%252F%252Fwww.google.com%252Fintl%252Fen_ph%252Fchrome%252Fterms%252F%26_and_accept_tos%3Dhttps%253A%252F%252Fpolicies.google.com%252Fterms/googlechrome.pkg</string>
 			<key>SOFTWARETITLE1</key>
 			<string>Auto</string>
 			<key>VENDOR</key>
 			<string>Google</string>
-			<key>SOFTWARETITLE2</key>
-			<string>Chrome</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -61,7 +59,7 @@
 				    	       <key>url</key>
 				    	        <string>%DOWNLOADURL%</string>	
 						<key>filename</key>
-						<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+						<string>%SOFTWARETITLE1%_%VENDOR%_%NAME%.pkg</string>
 						<key>pkg_category</key>
 						<string>%CATEGORY%</string>
 						<key>pkg_notes</key>
