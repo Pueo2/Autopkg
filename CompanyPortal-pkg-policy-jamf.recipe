@@ -15,7 +15,7 @@
 	<key>INFO</key>
 	<string>Company Portal was uploaded to Jamf Pro via Autopgkr</string>
 	<key>NAME</key>
-	<string>Microsoft Company Portal</string>
+	<string>Company Portal</string>
 	<key>POLICY_CATEGORY</key>
 	<string>Test - Enrollment</string>
 	<key>POLICY_NAME</key>
@@ -23,9 +23,7 @@
 	<key>POLICY_TEMPLATE</key>
 	<string>Policy_Template.xml</string>				
 	<key>SOFTWARETITLE1</key>
-	<string>Auto</string>
-	<key>SOFTWARETITLE2</key>
-	<string>Company Portal</string>
+	<string>APKG</string>
 	<key>VENDOR</key>
 	<string>Microsoft</string>
 	<key>PRODUCTID</key>
@@ -69,7 +67,7 @@
 		<key>url</key>
 		<string>%DOWNLOADURL%%PRODUCTID%</string>
 		<key>filename</key>
-		<string>%SOFTWARETITLE1%-%VENDOR%-%SOFTWARETITLE2%.pkg</string>
+		<string>%SOFTWARETITLE1%_%VENDOR%_%NAME%.pkg</string>
 		<key>pkg_category</key>
 		<string>%CATEGORY%</string>
 		<key>pkg_notes</key>
