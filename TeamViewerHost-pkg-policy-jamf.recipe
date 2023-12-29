@@ -24,6 +24,8 @@
 			<string>09.Install Latest %NAME%</string>
 			<key>VENDOR</key>
 			<string>Teck</string>
+			<key>SOFTWARETITLE1</key>
+			<string>APKG</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -63,7 +65,7 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>%VENDOR%-%NAME%.pkg</string>
+					<string>%SOFTWARETITLE1%_%VENDOR%_%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
