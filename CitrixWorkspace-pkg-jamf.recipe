@@ -18,8 +18,6 @@
      		   	<string>https://downloads.citrix.com/22497/CitrixWorkspaceApp.dmg?__gda__=exp=1710196458~acl=/*~hmac=3d9d060cf54046d507f31c1837489f634effbc01ffe0d2af31dc48cdcaadd3ec</string>
 			<key>SOFTWARETITLE1</key>
 			<string>APKG</string>
-            		<key>SOFTWARETITLE2</key>
-            		<string>Teck</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
@@ -59,7 +57,7 @@
 					<key>url</key>
 					<string>%DOWNLOADURL%</string>
 					<key>filename</key>
-					<string>%SOFTWARETITLE1%-%SOFTWARETITLE2%_%NAME%.pkg</string>
+					<string>%SOFTWARETITLE1%_%NAME%.pkg</string>
 					<key>pkg_category</key>
 					<string>%CATEGORY%</string>
 					<key>replace_pkg</key>
