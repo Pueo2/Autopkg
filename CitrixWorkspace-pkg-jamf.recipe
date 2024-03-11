@@ -19,8 +19,8 @@
 			<key>POLICY_TEMPLATE</key>
 			<key>SOFTWARETITLE1</key>
 			<string>APKG</string>
-            <key>SOFTWARETITLE2</key>
-            <string>Teck</string>
+            		<key>SOFTWARETITLE2</key>
+            		<string>Teck</string>
 			<key>UPDATE_PREDICATE</key>
 			<string>pkg_uploaded == True</string>
 	</dict>
