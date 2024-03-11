@@ -15,8 +15,7 @@
 			<key>NAME</key>
 			<string>Citrix-Workspace</string>
       			<key>DOWNLOADURL</key>
-     		   			<string>https://downloads.citrix.com/22497/CitrixWorkspaceApp.dmg?__gda__=exp=1710196458~acl=/*~hmac=3d9d060cf54046d507f31c1837489f634effbc01ffe0d2af31dc48cdcaadd3ec</string>
-			<key>POLICY_TEMPLATE</key>
+     		   	<string>https://downloads.citrix.com/22497/CitrixWorkspaceApp.dmg?__gda__=exp=1710196458~acl=/*~hmac=3d9d060cf54046d507f31c1837489f634effbc01ffe0d2af31dc48cdcaadd3ec</string>
 			<key>SOFTWARETITLE1</key>
 			<string>APKG</string>
             		<key>SOFTWARETITLE2</key>
@@ -42,7 +41,7 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			</dict>
+		     </dict>
 			<dict>
         			<key>Processor</key>
         			<string>com.github.haircut.processors/DatetimeOutputter</string>
@@ -68,11 +67,11 @@
 					<key>pkg_notes</key>
 					<string>Uploaded via Autopkg %datetime%</string>
 			    	   </dict>
-				</dict>	
+			   </dict>	
 					<dict>
 						<key>Processor</key>
 				    		<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		 			</dict>
-				</array>
-	</dict>
+	</array>
+</dict>
 </plist>
