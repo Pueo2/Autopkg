@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest Microsoft ATP Defender application</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.Pueo2-recipes.jamf.MSDefender</string>
+	<string>com.github.autopkg.Pueo2-recipes.pkg.MicrosoftDefender</string>
 	<key>Input</key>
 	<dict>
 			<key>CATEGORY</key>
