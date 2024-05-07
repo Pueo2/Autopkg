@@ -27,6 +27,8 @@
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
+	<key>ParentRecipe</>
+	<string>com.github.rtrouton.download.googlechromeuniversal</string>
 	<key>Process</key>
 	<array>
 		 <dict>
