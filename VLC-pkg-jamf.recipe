@@ -60,6 +60,8 @@
 				<string>%CATEGORY%</string>
 				<key>pkg_notes</key>
 				<string>Uploaded via Autopkg %datetime%</string>
+				<key>predictate</key>
+				<string>%UPDATE_PREDICATE%</string>
 				<key>replace_pkg</key>
 				<string>True</string>
 			</dict>
