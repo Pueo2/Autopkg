@@ -10,8 +10,19 @@
 	<dict>
 		<key>CATEGORY</key>
 		<string>Media</string>
+		<key>INFO</key>
+		<string>VLC was uploaded to Jamf Pro via Autopgkr</string>
 		<key>NAME</key>
 		<string>VLC</string>
+		<key>SOFTWARETITLE1</key>
+		<string>APKG</string>
+		<key>VENDOR</key>
+		<string>VideoLAN</string>
+		<key>VERSIONTYPE</key>
+		<string>CFBundleShortVersionString</string>
+		<key>UPDATE_PREDICATE</key>
+		<string>pkg_uploaded == True</string>
+		
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -24,15 +35,34 @@
 			<dict>
 				<key>category_name</key>
 				<string>%CATEGORY%</string>
+				<key>pkg_info</key>
+				<string>%INFO%</string>
+				<key>category_priority</key>
+				<string>8</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 		</dict>
 		<dict>
+		       <key>Processor</key>
+		        <string>com.github.haircut.processors/DatetimeOutputter</string>
+				<key>Arguments</key>
+				<dict>
+		        <key>datetime_format</key>
+		        <string>%A, %B %e, %Y at %l:%M %p</string>
+		    	</dict>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
+				<key>filename</key>
+				<string>%SOFTWARETITLE1%_%VENDOR%_%NAME%.pkg</string>
 				<key>pkg_category</key>
 				<string>%CATEGORY%</string>
+				<key>pkg_notes</key>
+				<string>Uploaded via Autopkg %datetime%</string>
+				<key>replace_pkg</key>
+				<string>True</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
