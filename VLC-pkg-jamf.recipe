@@ -18,11 +18,8 @@
 		<string>APKG</string>
 		<key>VENDOR</key>
 		<string>VideoLAN</string>
-		<key>VERSIONTYPE</key>
-		<string>CFBundleShortVersionString</string>
 		<key>UPDATE_PREDICATE</key>
 		<string>pkg_uploaded == True</string>
-		
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
